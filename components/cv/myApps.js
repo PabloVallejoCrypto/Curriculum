@@ -16,7 +16,7 @@ export default function Contact() {
 					View more on.
 				</h1>
 				<Link href='/apps' style={marginStyle}>
-					<button className='btn mx-auto mb-3 magicButton cuadrado'>  DISCOVER  </button>
+					<button className='btn mx-auto mb-3 magicButton cuadrado'>  NEXT  </button>
 				</Link>
 			</div>		
 		</div>	
