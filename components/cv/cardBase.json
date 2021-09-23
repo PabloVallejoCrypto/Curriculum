@@ -1,0 +1,13 @@
+{
+	"images": [
+		"https://img.icons8.com/color/480/000000/google-maps.png",
+		"https://img.icons8.com/nolan/512/artificial-intelligence.png"
+	],
+	"descriptions": [
+		"Next JS app. Google Maps API implemented with Redux for state storage. Include LoadScript, Marker and AutoComplete (Search Box) methods, all saved by Redux.",
+		"Next JS app. GPT-2 Artificial Intelligence implementation. DeepAI API Text-Generator Model. Inputs saved with Redux.",
+		"Next JS app. DeepAI API Demographic Recognition Model. It only allows Pexels.com photos because of CORS security.",
+		"Next JS app. DeepAI Neural Talk Model. It only allows Pexels.com photos because of CORS security.",
+		"Next JS app. Own crypto NFT generator with some DeepAI Artificial Intelligence implementation for image generating. You'll need a wallet, Metamask recomended."
+	]
+}

@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color:  white;
+  color:  black;
+  overflow-x: hidden;
+  font-family: Yanone Kaffeesatz, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* BAckgrounds for next js  */
+
+. backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+. backgroundText {
+  z-index: 1;
+}
+
+
+/*
+Scroll Bars
+*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #333; /*    #f1f1f1;    */
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 18px;
+  background: #e1e1e1;
+}
+
+/*  Phone or Pc  */
+
+@media only screen and (min-width: 900px) {
+  .devicePc {
+    background-image: url("https://cdn.glitch.com/5b1333ea-0fee-48d8-a352-43bf73f433f0%2FplanetViewSagradaFamilia2.jpg?v=1614548607890");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .rectangle {
+    padding: 3%;
+    min-width: 70%;
+    min-height: 53vh;
+  }
+  .cardBarcelona {
+    padding: 2%;
+    color: black;
+    height: 33vh;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+  .devicePhone {
+    background-image: url("https://cdn.glitch.com/5b1333ea-0fee-48d8-a352-43bf73f433f0%2FplanetViewSagradaFamilia5.jpg?v=1615112830402");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .rectangle {
+    padding: 3%;
+    width: 70%;
+    min-height: 50vh;
+  }
+  .cardBarcelona {
+    padding: 2%;
+    color: black;
+    min-height: 18vh;
+    max-height: 25vh;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+}
+.cuadrado {
+  width: 100px;
+  height: 100px;
+}
+
+.redondeado {
+  border-radius:  15px;
+}
+
+.badgeGold {
+  margin:  5%;
+  padding: 1.5%;
+  border-radius:  10px;
+  background-color: #FFD700;
+  color:  black;
+}
+
+.badgeWhite {
+  margin:  2%;
+  padding: 2%;
+  border-radius:  10px;
+  background-color: white;
+  color:  black;
+}
+.badgeWhite:hover {
+  color:  #333;
+}
+
+.badgeBlack {
+  margin:  5%;
+  padding: 2%;
+  border-radius:  10px;
+  background-color: black;
+  color:  white;
+}
+
+.badgeBlack:hover {
+  color:  #FFD700;
+}
+
+/*  Neomorfismo    */
+.magicButton {
+  color: white;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #373737, #2e2e2e);
+  box-shadow: 7px 7px 18px #171717, -7px -7px 18px #4f4f4f;
+}
+.magicButton:hover {
+  color: white;
+  border-radius: 15px;
+  background: #333333;
+  box-shadow: inset 7px 7px 18px #171717, inset -7px -7px 18px #4f4f4f;
+}
+
+.magicButton1 {
+  color: black;
+  border-radius: 18px;
+background: white;
+box-shadow:  9px 9px 18px #5a5a5a,
+             -9px -9px 18px #ffffff;
+}
+.magicButton1:hover {
+  color: black;
+  border-radius: 18px;
+background: #e0e0e0;
+box-shadow: inset 5px 5px 18px #5a5a5a,
+            inset -5px -5px 18px #ffffff;
+}
+
+.containerCoolBasic {
+  background-color: black;
+  min-width: 25vw;
+  min-height: 33vh;
+  color: white;
+  border-color: #FFD700;
+  border-height: 10px;
+  padding: 7%;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.containerCool {
+  min-width: 25vw;
+  min-height: 33vh;
+  color: black;
+  border-color: #FFD700;
+  border-height: 10px;
+  padding: 7%;
+  border-radius: 25px;
+  background-image: url(https://cdn.glitch.com/5b1333ea-0fee-48d8-a352-43bf73f433f0%2FbadgeLlibres.png?v=1614378639070);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.linkGroc {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.linkGroc span {
+  position: relative;
+  z-index: 2;
+}
+
+.linkGroc:after {
+  color: black;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FFD700;
+  transition: all 0.35s;
+}
+
+.linkGroc:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.linkGroc:hover:after {
+  width: 100%;
+}
+
+@keyframes coolStart {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes keepDeath {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.cardStyle {
+  padding: 2.5%;
+  color:  black;
+  border-radius: 18px;
+  background: white;
+  box-shadow:  13px 13px 26px #868686,
+               -13px -13px 26px #ffffff;
+}
+.cardStyle1 {
+  padding: 2.5%;
+  color:  white;
+  border-radius: 18px;
+  background: #333333;
+  box-shadow: inset 20px 20px 11px #202020, inset -20px -20px 11px #464646;
+}
+.cardStyle2 {
+  padding: 2.5%;
+  color:  white;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #373737, #2e2e2e);
+  box-shadow: 7px 7px 18px #171717, -7px -7px 18px #4f4f4f;
+}
+
+
+
+h2 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-family:  Arial;
+  font-size: 75%;
+  line-height: auto;
+  margin: 10px 0;
+}
+
+
+
+.loader {
+  position: relative;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  perspective: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid black;   /*   Groc #FFD700  */
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid black;   /*   Groc #FFD700  */
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid black;   /*   Groc #FFD700  */
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
