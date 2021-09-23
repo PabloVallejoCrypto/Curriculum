@@ -21,7 +21,7 @@ export default function DeveloperCard() {
 			</h1>
 			<h1 className='display-6 mb-3'>  5 Test Apps  </h1>
 			<Link href='/apps'>
-				<button className='btn mb-3 magicButton1 cuadrado'>  CHECK  </button>
+				<button className='btn mb-3 magicButton1 cuadrado'>  NEXT  </button>
 			</Link>
 		</div>
 	)
