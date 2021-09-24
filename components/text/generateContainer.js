@@ -20,7 +20,7 @@ export default function generateContainer() {
 				id="inputText"
 				style={styleInput}
 				/>
-			<a href={"/text/" + value} type="submit">
+			<a href={"/text/" + document.getElementById('inputText').value} type="submit">
 				<button className='btn magicButton' style={styleButton}> 	GENERATE 		</button>
 			</a>
 		</form>
