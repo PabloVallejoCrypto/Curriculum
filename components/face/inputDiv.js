@@ -5,8 +5,6 @@ import store from '../store.js'
 const styleDiv = {padding: "5%"};
 const styleInput = {borderRadius: "10px"};
 
-
-
 export default function InputDiv(props) {
 	const makeChange = () => {
 		const inputUrl = document.getElementById('inputUrl');
@@ -21,12 +19,13 @@ export default function InputDiv(props) {
 			<input
 				type='text'
 				className='text-center'
+				onChange={makeChange}
 				placeholder={props.error ? "AI don't like that image" : 'Image URL'}
 				id="inputUrl"
 				style={styleInput}
 				/>
 			<a type="submit">
-				<button className='btn magicButton' onClick={makeChange}> 	GENERATE	</button>
+				<button className='btn magicButton'}> 	GENERATE	</button>
 			</a>
 		</form>
 	)
