@@ -18,6 +18,7 @@ const reducer = (state = initialState, action) => {
       initialState.accounts.push(action.payload);
       return initialState;
     case 'faceUrl':
+      console.log("STORE  " + action.payload);
       initialState.faceUrl.push(action.payload);
       return initialState;
     case 'faceDesc':
