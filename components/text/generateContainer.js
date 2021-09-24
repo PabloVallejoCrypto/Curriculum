@@ -11,7 +11,7 @@ export default function generateContainer() {
 		setValue(newValue);
 	};
 	return (
-		<form>
+		<form action={"/text/" + value} method="GET">
 			<input
 				type='text'
 				className='text-center'
@@ -20,7 +20,7 @@ export default function generateContainer() {
 				id="inputText"
 				style={styleInput}
 				/>
-			<a href={"/text/" + value} type="submit">
+			<a type="submit">
 				<button className='btn magicButton' style={styleButton}> 	GENERATE 		</button>
 			</a>
 		</form>
