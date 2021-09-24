@@ -20,9 +20,9 @@ export default function generateContainer() {
 				id="inputText"
 				style={styleInput}
 				/>
-			<Link href={"/text/" + value} type="submit">
+			<a href={"/text/" + value} type="submit">
 				<button className='btn magicButton' style={styleButton}> 	GENERATE 		</button>
-			</Link>
+			</a>
 		</form>
 	)
 }	
