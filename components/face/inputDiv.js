@@ -10,6 +10,7 @@ export default function InputDiv(props) {
 		const inputUrl = document.getElementById('inputUrl');
 		if(inputUrl.value != ''){
 			store.dispatch({type: 'faceUrl', payload: inputUrl.value});
+			console.log("Value dispatched" + inputUrl.value);
 		}else{
 			inputUrl.placeholder = 'Incorrect Url';
 		}
