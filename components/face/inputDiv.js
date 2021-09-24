@@ -17,7 +17,7 @@ export default function InputDiv(props) {
 		}
 	};
 	return(
-		<form>
+		<form action="/face" method="GET">
 			<input
 				type='text'
 				className='text-center'
@@ -25,9 +25,9 @@ export default function InputDiv(props) {
 				id="inputUrl"
 				style={styleInput}
 				/>
-			<Link href="/face" type="submit">
+			<a type="submit">
 				<button className='btn magicButton' onClick={makeChange}> 	GENERATE	</button>
-			</Link>
+			</a>
 		</form>
 	)
 };
