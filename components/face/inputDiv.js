@@ -19,7 +19,7 @@ export default function InputDiv(props) {
 			<input
 				type='text'
 				className='text-center'
-				onChange={makeChange}
+				
 				placeholder={props.error ? "AI don't like that image" : 'Image URL'}
 				id="inputUrl"
 				style={styleInput}
