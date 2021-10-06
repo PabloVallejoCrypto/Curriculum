@@ -11,7 +11,7 @@ import Badge from '../public/badgeApps.png'
 
 import Loader from './loader.js'
 
-const divStyle = {padding: "3%", backgroundColor: "#333"};
+const divStyle = {padding: "3%", backgroundColor: "#333", justifyContent: "center"};
 const titleStyle = {margin: "3%"};
 
 const buttonStyle = {margin: "3%", padding: "3%"}
@@ -19,7 +19,7 @@ const buttonStyle = {margin: "3%", padding: "3%"}
 
 export default function Apps() {
 	return (		
-		<div className='col-lg-12 mx-auto text-center'  style={divStyle}>
+		<div className='col-lg-12 text-center'  style={divStyle}>
 			<div className='col-lg-6 mx-auto' style={titleStyle}>
 				<Image
 				    src={Badge}
