@@ -1,5 +1,6 @@
 import { GoogleMap, useJsApiLoader, LoadScript, Marker, Autocomplete } from '@react-google-maps/api';
 import React from 'react'
+import Link from 'next/link'
 import Logo from '../../public/chaoticLogo.png'
 
 import store from '../../components/store.js'
@@ -33,9 +34,11 @@ const inputStyle = {
   marginLeft: "-120px"
 };
 
-export default function Map() {
+const returnStyle = {position: "absolute", bottom: "25px", left: "25px", textDecoration: "none"};
+
+export default function Map(props) {
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: process.env.GOOGLE_API_KEY,
+    googleMapsApiKey: props.KEY.KEY,
     libraries: ['places']
   })
 
@@ -106,6 +109,7 @@ export default function Map() {
           </>
             }
         </GoogleMap>
+        <Link href='/apps'><a className='badge badgeWhite' style={returnStyle}>  RETURN  </a></Link>
     </>
   ) : <></>
 }
