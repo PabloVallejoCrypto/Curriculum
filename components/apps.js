@@ -36,9 +36,7 @@ export default function Apps() {
 				<Card key={2} title="GPT-2 AI" level={2} link='/text' logo={Data.images[1]} description={Data.descriptions[1]}	/>
 			</div>
 			<Card key={5} title="DeepAI NFT" link='/crypto' level={5} logo={Logo} description={Data.descriptions[4]}		/>
-			<Link href='/'>
-				<h4><a><button className='btn mx-auto magicButton cuadrado'> RETURN </button></a></h4>
-			</Link>
+			<a href='/'><button className='btn mx-auto magicButton cuadrado'> RETURN </button></a>
 		</div>
 	)
 }
