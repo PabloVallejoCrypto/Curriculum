@@ -6,6 +6,8 @@ import randomCode from '../../public/randomGeneratorCode.png'
 const rowStyle = {padding: "1%", margin: "2%", minHeight: "100vh"};
 const textLeft = {textAlign: "left", margin: "3%"};
 const textRight = {textAlign: "right", margin: "3%"};
+const linkStyle = {justifyContent: "center"};
+const  arialStyle = {fontFamily: "Arial"};
 
 export default function DescriptionRow() {
 	return (
@@ -23,42 +25,61 @@ export default function DescriptionRow() {
 					<h1 className='display-4'>
 						Solidity
 					</h1>
-					<h1 className='lead'>  SMART CONTRACTS  </h1>
-					<p> More than 2 years  </p>
+					<h1 className='lead'>  SOME OF MY CONTRACTS  </h1>
 				</div>
 				<div style={textLeft}>
 					<h1 className='display-6'>
 						Random Generator
 					</h1>
-					<h1 className='lead'>  OWN IN-CHAIN GENERATOR  </h1>
+					<h1 className='lead'>  SECURE FULL IN-CHAIN NUMBER GENERATOR  </h1>
 					<Image
 					    src={randomCode}
 					    layout='responsive'
 					    className='redondeado'
 						alt="Pablo' Smart Contract"
 						/>
-					<Link href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticCasino/ChaotiCasino.sol'>
-						<button className='btn mb-3 magicButton1'> GitHub  </button>
-					</Link>
+					<a href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticCasino/ChaotiCasino.sol'>
+						<button className='btn mb-3 magicButton1'> CODE  </button>
+					</a>
 				</div>
 				<div style={textRight}>
 					<h1 className='display-6'>
 						CHAOS Token
 					</h1>
-					<h1 className='lead'>  XΟΣ  </h1>
-					<p> New type of token. 
-					Uses ERC20 protocol but implements some logic. 
-					It is a deflationary currency, like bitcoin, which through a democratic process becomes inflationary, like the dollar. 
-					All thanks to the magic of Ethereum. </p>
-					<Link href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticToken/ChaoticToken.sol'>
-						<button className='btn mb-3 magicButton1'> GitHub  </button>
-					</Link>
+					<h1 className='lead' style={arialStyle}>  XΟΣ  </h1>
+					<p>
+						Next Generation Token Deflationary-Inflationary.
+					</p>
+					<p>
+						Deflacionary token with a closed INITIAL SUPPLY of 18 millions and one Inflationary process,
+					</p>
+					<p> 
+						a World Democratic System. ERC20 Protocol implemented.
+					</p>
+					<a href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticToken/ChaoticToken.sol'>
+						<button className='btn mb-3 magicButton1'>  CODE  </button>
+					</a>
 				</div>
-				<h1 className='display-6'>  More Contracts  </h1>
-				<h1 className='lead'>  Chaotic NFT (ERC721), Catalan Exchange and more...   </h1>
-				<Link href='https://github.com/PabloVallejoCrypto/SmartContracts'>
-					<button className='btn mx-auto mb-3 magicButton1'> GitHub  </button>
-				</Link>
+				<div style={textLeft}>
+					<h1 className='display-6'>
+						DeepNFT
+					</h1>
+					<h1 className='lead'>  Genetic & Artificial Intelligence Based NFT  </h1>
+					<p>
+						To see a test go to chaoticbcn.com/crypto/ + seed to develop the token or just click see test!
+					</p>
+					<div className='row mx-auto' style={linkStyle}>
+						<a href='/crypto/helloChaotic' className='btn mx-auto mb-3 magicButton1'>
+							SEE TEST
+						</a>
+						<a href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticCasino/ChaotiCasino.sol' className='btn mb-3 magicButton1'>
+							CODE
+						</a>
+					</div>
+				</div>
+				<a href='https://github.com/PabloVallejoCrypto/SmartContracts'>
+					<button className='btn mx-auto mb-3 magicButton1 cuadrado'> MORE CONTRACTS  </button>
+				</a>
 			</div>
 		</div>
 	)
