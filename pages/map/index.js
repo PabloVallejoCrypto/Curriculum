@@ -4,11 +4,16 @@ import Map from '../../components/map/map.js'
 
 const rowStyle = {padding: "3%"};
 
-export default function MapPage({ Component, pageProps }) {
+function MapPage(pageProps) {
   return (
     <>
       <Head   />
-      <Map   />
+      <Map  KEY={pageProps}   />
     </>   
   )
 }
+//
+MapPage.getInitialProps = async (context) => {
+  return ({KEY: process.env.GOOGLE_API_KEY});
+};
+export default MapPage;
