@@ -49,7 +49,7 @@ export default function DescriptionRow() {
 				<h1 className='display-6'>  Redux & Web3  </h1>
 				<h1 className='lead'> IMPLEMENTED  </h1>
 				<Link href='https://github.com/PabloVallejoCrypto/Curriculum'>
-					<button className='btn mx-auto mb-3 magicButton1'> This site Repository  </button>
+					<a><button className='btn mx-auto mb-3 magicButton1'>  This site Repository  </button></a>
 				</Link>
 			</div>
 		</div>
