@@ -51,10 +51,10 @@ export default function MetamaskConnection() {
 	}
 
 	return (
-		<div className='ccol-lg-12 text-center' style={containerStyle}>
-			<button className='btn mb-3 mx-auto magicButton cuadrado' onClick={connectMetamask}> CONNECT WALLET  </button>
+		<div className='col-lg-12 text-center' style={containerStyle}>
+			<button className='btn mb-3 mx-auto magicButton cuadrado' onClick={connectMetamask}>  CONNECT WALLET  </button>
 			<Link href='/apps'>
-				<button className='btn mx-auto magicButton cuadrado'> RETURN </button>
+				<a><button className='btn mx-auto magicButton cuadrado'> RETURN </button></a>
 			</Link>
 		</div>
 	)
