@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
 
 import DeveloperCard from './developerCard.js'
 import CustomerCard from './customerCard.js'
 
 import Skills from './skills.js'
+import Curriculum from '../../public/PabloVallejoCVeng.png'
 
+const someMargin = {margin: "4%"};
 
 export default function Description() {
 	const [phase, setPhase] = React.useState(0);
@@ -30,20 +31,22 @@ export default function Description() {
 				EU driving license B, 5 years.
 				Adaptable to SCRUM and other Agile methodologies.
 			</h1>
+			<div className='col-lg-4 mx-auto cardStyle' style={someMargin}>
+				<h1 className='lead'>  CURRICULUM   </h1>
+				<p>  Check my Resume  </p>
+				<Link href={Curriculum.src}>
+					<a style={{textDecoration: "none"}}>
+						<Image
+						    src="https://img.icons8.com/nolan/512/pdf-2.png"
+						    width="100"
+						    height="100"
+						    className='redondeado'
+							alt="Curriculum Link"
+							/>
+					</a>
+				</Link>
+			</div>
 			<Skills   />
-			<h1 className='displa-6'> EXPERIENCE </h1>
-			<div className='row mx-auto'>
-				<button className='btn mb-3 mx-auto magicButton1' id='developerButton' onClick={closeCustomer}>
-					DEVELOPER
-				</button>
-				<button className='btn mb-3 mx-auto magicButton1' id='customerButton' onClick={closeDeveloper}>
-					CUSTOMER SERVICE
-				</button>
-			</div>
-			{phase == 0 ? <DeveloperCard  /> : <CustomerCard  />}
-			<div className='col-lg-8 cardStyle mx-auto' style={{margin: "2%", padding: "2.5%"}} id='customerDiv' hidden={true}>
-				<h1> customer service </h1>
-			</div>
 		</div>
 	)
 }
