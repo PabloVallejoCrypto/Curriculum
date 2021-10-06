@@ -21,7 +21,7 @@ import Loader from './loader.js'
 import Apps from './apps.js'
 
 
-const styleDiv = {padding: "5%"};
+const styleDiv = {padding: "3.5%"};
 
 export default function Main() {
 	const newAnimation = "coolStart 4s ease-in-out";
@@ -48,7 +48,7 @@ export default function Main() {
 	}
 	return (
 		<div className="col-lg-12 mx-auto text-center" style={styleDiv}>
-			<Title 			/>
+			<Title   style={{height: "100vh"}}	/>
 			<DescriptionRow   />
 			<FullStackBadge   />
 			<SolidityBadge  />
