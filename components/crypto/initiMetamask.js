@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Web3 from 'web3';
 import styles from '../../styles/Home.module.css'
 
-
 import ChaoticToken from '../contracts/chaoticTokenABI.json';
 import ChaoticTokenNFT from '../contracts/chaoticNFTtokenABI.json';
 
 import store from '../../components/store.js'
+
+const containerStyle = {backgroundColor: "#333", justifyContent: "center"};
 
 export default function MetamaskConnection() {
 
@@ -51,13 +52,11 @@ export default function MetamaskConnection() {
 	}
 
 	return (
-		<div className={styles.container} style={{backgroundColor: "#333"}}>
-			<div className='col-lg-12 mx-auto'>
-				<button className='btn mb-3 mx-auto magicButton cuadrado' onClick={connectMetamask}> CONNECT WALLET  </button>
-				<Link href='/apps'>
-					<button className='btn mb-3 mx-auto magicButton cuadrado'> RETURN </button>
-				</Link>
-			</div>
+		<div className='ccol-lg-12' style={containerStyle}>
+			<button className='btn mb-3 mx-auto magicButton cuadrado' onClick={connectMetamask}> CONNECT WALLET  </button>
+			<Link href='/apps'>
+				<button className='btn mb-3 mx-auto magicButton cuadrado'> RETURN </button>
+			</Link>
 		</div>
 	)
 }
