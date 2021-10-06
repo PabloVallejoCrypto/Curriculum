@@ -34,7 +34,7 @@ export default function Generator(props = {}) {
 			    alt="Random image DeepAi generated"
 			    />
 			    <Link href={'https://testnet.bscscan.com/token/' + window.contractTokenNFT._address}>
-			    	<h4><a className='badge badgeWhite' style={{textDecoration: "none"}}>  View Contract on Binance Scan  </a></h4>
+			    	<h4><a className='badge badgeWhite' style={{textDecoration: "none"}}>  View NFT Contract on Binance Scan  </a></h4>
 			    </Link>
 			    <h1 className='lead'>  COST  <p style={{fontFamily: "Arial"}}>99 XΟΣ</p></h1>
 			<h1 className='lead'><button className='btn magicButton cuadrado mb-3' onClick={approve}> BUY </button></h1>
