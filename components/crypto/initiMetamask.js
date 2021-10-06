@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
 import Web3 from 'web3';
-import styles from '../../styles/Home.module.css'
 
 import ChaoticToken from '../contracts/chaoticTokenABI.json';
 import ChaoticTokenNFT from '../contracts/chaoticNFTtokenABI.json';
@@ -53,9 +52,9 @@ export default function MetamaskConnection() {
 
 	return (
 		<div className='ccol-lg-12' style={containerStyle}>
-			<button className='btn mb-3 mx-auto magicButton cuadrado' onClick={connectMetamask}> CONNECT WALLET  </button>
+			<button className='btn mx-auto magicButton cuadrado' onClick={connectMetamask}> CONNECT WALLET  </button>
 			<Link href='/apps'>
-				<button className='btn mb-3 mx-auto magicButton cuadrado'> RETURN </button>
+				<button className='btn mx-auto magicButton cuadrado'> RETURN </button>
 			</Link>
 		</div>
 	)
