@@ -32,7 +32,7 @@ export default function Canvas() {
 			<div className='col-lg-8 mx-auto cardStyle2 text-left' style={containerStyle}>
 				{tokenId != 18 ? <Alert id={tokenId}  /> : <></>}
 				{phase == 0 ? <GetStarted newPhase={setPhase}  /> : (phase == 1 ? <Faucet newPhase={setPhase}  /> : <Generator newToken={setTokenId}  />)}
-				<Link href='/apps'><h1 className='lead text-center'><button className='btn mx-auto magicButton'>  RETURN  </button></h1></Link>
+				<Link href='/apps'><h1 className='lead text-center'><button className='btn mx-auto magicButton cuadrado'>  RETURN  </button></h1></Link>
 			</div>
 		</div>
 	)
