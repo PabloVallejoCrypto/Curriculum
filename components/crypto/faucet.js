@@ -29,13 +29,13 @@ export default function Faucet(props) {
 			<div className='row mx-auto' style={rowStyle}>
 				<div className='col-lg-5 mx-auto cardStyle2' style={morePadding}>
 					<h1 className='display-6'>  Binance Smart Chain  </h1>
-					<a href='https://testnet.binance.org/faucet-smart' style={linkNoStyle}><button className='btn mb-3 mx-auto linkGroc cuadrado' style={arialStyle}>  FREE BNB  </button></a>
+					<a href='https://testnet.binance.org/faucet-smart' style={linkNoStyle}><button className='btn mb-3 mx-auto linkGroc' style={arialStyle}>  FREE BNB  </button></a>
 				</div>
 				<div className='col-lg-5 mx-auto cardStyle2' style={morePadding}>
 					<h1 className='display-6'>  Chaotic BCN    </h1>
 					<p>  If you don't see your token at wallet, add it with the contract address.  </p>
 					<a href='https://testnet.bscscan.com/token/0x655E53dB0d79075A02E6c6e576fef40304218721' style={linkNoStyle}><button className='btn mb-3 mx-auto linkGroc cuadrado' style={arialStyle}>  Contract Address  </button></a>
-					<button className='btn mb-3 mx-auto linkGroc cuadrado' onClick={chaosFaucet} style={arialStyle}>  FREE XΟΣ  </button>
+					<button className='btn mb-3 mx-auto linkGroc' onClick={chaosFaucet} style={arialStyle}>  FREE XΟΣ  </button>
 				</div>
 			</div>
 			<h1 className='lead text-center'><button className='btn mx-auto magicButton cuadrado' onClick={changePhase}>  NEXT PAGE  </button></h1>
