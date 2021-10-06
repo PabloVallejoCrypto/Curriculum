@@ -2,14 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const divStyle = {padding: "5%", backgroundColor: "#333", minHeight: "100vh"};
-const containerStyle = {padding: "5%"};
+const containerStyle = {padding: "3.5%"};
 
 const titleStyle = {margin: "3%", padding: "2%"};
 
 export default function TokenCard(props) {
 	return (
 		<div className='col-lg-12' style={divStyle}>
-			<div className='col-lg-8 mx-auto cardStyle2 text-center' style={containerStyle}>
+			<div className='col-lg-6 mx-auto cardStyle2 text-center' style={containerStyle}>
+				<h1 className='display-2' style={titleStyle}>  Deep NFToken  </h1>
 				<Image
 				    src={props.imageLink}
 				    className='redondeado'
@@ -19,12 +20,11 @@ export default function TokenCard(props) {
 				    alt="Chaotic Barcelona Logo"
 				    />
 				<div className='col-lg-8 mx-auto' style={titleStyle}>
-					<h1 className='display-4'>  Deep NFToken  </h1>
 					<h1 className='lead'>
 						<span className='badgeWhite'> ID: {props.tokenId}  </span>
 					</h1>
+					<Link href='/apps'><h1 className='lead text-center'><button className='btn mx-auto magicButton cuadrado'>  RETURN  </button></h1></Link>
 				</div>
-				<Link href='/apps'><h1 className='lead text-center'><button className='btn mx-auto magicButton'>  RETURN  </button></h1></Link>
 			</div>
 		</div>
 	)
