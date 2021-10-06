@@ -27,5 +27,5 @@ export default function TokenCard(props) {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }
