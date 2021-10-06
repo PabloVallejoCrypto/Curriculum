@@ -6,7 +6,7 @@ const textLeft = {textAlign: "left"};
 
 export default function DeveloperCard() {
 	return (
-		<div className='col-lg-12 cardStyle mx-auto text-center' style={divStyle}>
+		<div className='col-lg-12 mx-auto text-center' style={divStyle}>
 			<h1 className='display-4'> Developer </h1>
 			<h1 className='lead' style={textLeft}>
 				My developer experience consist on more than 1 year of profesional work and more than 5 years creating personal webs and protocols. 
@@ -19,7 +19,7 @@ export default function DeveloperCard() {
 				Full stack websites with Express.js, server-side rendering with Next, AI protocols with Python, REST-API and Ethereum/Binance implementations.
 				I wrote some in-chain protocols, too on GitHub as SmartContracts, random number generation algorithms, other protocols implementations, token factories (ERC20, ERC721) and more.
 			</h1>
-			<h1 className='display-6 mb-3'>  5 Test Apps  </h1>
+			<h1 className='display-6 mb-3'>  3 Test Apps  </h1>
 			<Link href='/apps'>
 				<button className='btn mb-3 magicButton1 cuadrado'>  NEXT  </button>
 			</Link>
