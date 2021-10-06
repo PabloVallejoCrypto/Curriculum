@@ -72,7 +72,7 @@ export default function DescriptionRow() {
 						<a href='/crypto/helloChaotic' className='btn mx-auto mb-3 magicButton1'>
 							SEE TEST
 						</a>
-						<a href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticCasino/ChaotiCasino.sol' className='btn mb-3 magicButton1'>
+						<a href='https://github.com/PabloVallejoCrypto/SmartContracts/blob/main/ChaoticFlower(ERC721_token)/CryptoFlower.sol' className='btn mb-3 magicButton1'>
 							CODE
 						</a>
 					</div>
