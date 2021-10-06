@@ -37,7 +37,7 @@ export default function Apps() {
 			</div>
 			<Card key={5} title="DeepAI NFT" link='/crypto' level={5} logo={Logo} description={Data.descriptions[4]}		/>
 			<Link href='/' replace>
-				<button className='btn mx-auto mb-3 magicButton cuadrado'>  RETURN  </button>
+				<a><button className='btn mx-auto mb-3 magicButton cuadrado'>  RETURN  </button></a>
 			</Link>
 		</div>
 	)
