@@ -7,7 +7,7 @@ import Card from './cardLevel.js'
 import Logo1 from '../public/googleMapsPhoto.jpg'
 import Logo from '../public/chaoticLogo.png'
 
-import Badge from '../public/myAppsBadge.png'
+import Badge from '../public/badgeApps.png'
 
 import Loader from './loader.js'
 
@@ -20,7 +20,7 @@ const buttonStyle = {margin: "3%", padding: "3%"}
 export default function Apps() {
 	return (		
 		<div className='col-lg-12 mx-auto text-center'  style={divStyle}>
-			<div className='col-lg-10 mx-auto' style={titleStyle}>
+			<div className='col-lg-6 mx-auto' style={titleStyle}>
 				<Image
 				    src={Badge}
 				    className='redondeado'
@@ -34,10 +34,6 @@ export default function Apps() {
 			<div className='row mx-auto'>
 				<Card key={1} title="Google Maps API" level={1} link='/map' logo={Data.images[0]} description={Data.descriptions[0]}	/>
 				<Card key={2} title="GPT-2 AI" level={2} link='/text' logo={Data.images[1]} description={Data.descriptions[1]}	/>
-			</div>
-			<div className='row mx-auto'>
-				<Card key={3} title="AI Face Recognition" level={3} link='/face' logo={Data.images[1]} description={Data.descriptions[2]}	/>
-				<Card key={4} title="Neural Talk" level={4} link='/neuralTalk' logo={Data.images[1]} description={Data.descriptions[3]}	/>
 			</div>
 			<Card key={5} title="DeepAI NFT" link='/crypto' level={5} logo={Logo} description={Data.descriptions[4]}		/>
 			<Link href='/' replace>
