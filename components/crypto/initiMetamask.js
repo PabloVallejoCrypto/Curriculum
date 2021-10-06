@@ -8,7 +8,7 @@ import ChaoticTokenNFT from '../contracts/chaoticNFTtokenABI.json';
 
 import store from '../../components/store.js'
 
-const containerStyle = {backgroundColor: "#333", justifyContent: "center", height: "100vh"};
+const containerStyle = {backgroundColor: "#333", justifyContent: "center", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"};
 
 export default function MetamaskConnection() {
 
