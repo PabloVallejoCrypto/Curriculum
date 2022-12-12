@@ -107,7 +107,6 @@ export default function Map(props) {
               />
             </Autocomplete>
           </>
-            }
         </GoogleMap>
         <Link href='/apps'><a className='badge badgeWhite' style={returnStyle}>  RETURN  </a></Link>
     </>
