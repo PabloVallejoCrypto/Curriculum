@@ -9,13 +9,44 @@ import InputDiv from './inputDiv.js'
 import Loader from '../loader.js'
 import store from '../store.js'
 
+import { Configuration, OpenAIApi } from "openai";
+
 const styleDiv = {padding: "7.5%", backgroundColor: "#333", minHeight: "100vh"};
 const containerStyle = {padding: "5%"};
 const styleInput = {borderRadius: "10px"};
 
+
 export default function NeuralTalk(props) {
 	const state = store.getState();
 
+	if (typeof window != "undefined") {
+		//const apiKey = "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";
+
+		console.log(apiKey);
+		
+		const configuration = new Configuration({
+			apiKey: apiKey,
+		});
+
+		console.log(configuration);
+
+		const openai = new OpenAIApi(configuration);
+		
+		const gimmie = async () => {
+			  
+			const response = await openai.createCompletion({
+				model: "text-ada-001",
+				prompt: "Como te llamas guap@?",
+				temperature: 0,
+				max_tokens: 18,
+			});
+			
+			console.log(response);	
+		};
+
+		gimmie();
+	}
+	  
 	return (
 		<div className="col-lg-12 mx-auto text-center" style={styleDiv}>
 			<div className='col-lg-8 cardStyle2 mx-auto' style={containerStyle}>

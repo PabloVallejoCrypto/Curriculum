@@ -1,0 +1,17 @@
+{
+  "/_app": "pages/_app.js",
+  "/api": "pages/api.js",
+  "/apps": "pages/apps.html",
+  "/crypto/[tokenId]": "pages/crypto/[tokenId].js",
+  "/crypto": "pages/crypto.html",
+  "/face": "pages/face.js",
+  "/": "pages/index.html",
+  "/loader": "pages/loader.html",
+  "/map": "pages/map.js",
+  "/neuralTalk": "pages/neuralTalk.js",
+  "/text/[newText]": "pages/text/[newText].js",
+  "/text": "pages/text.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
